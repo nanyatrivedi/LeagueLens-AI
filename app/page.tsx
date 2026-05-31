@@ -71,14 +71,25 @@ export default function Home() {
             analytics, player insights, and match prediction.
           </motion.p>
 
-          <motion.button
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
-            className="mt-10 rounded-2xl border border-cyan-400/40 bg-cyan-400/10 px-8 py-4 text-lg font-semibold text-cyan-100 shadow-[0_0_40px_rgba(34,211,238,0.25)] backdrop-blur-md transition-all duration-300 hover:scale-105 hover:bg-cyan-400/20 hover:shadow-[0_0_60px_rgba(34,211,238,0.5)]"
-          >
-            Enter The Rift
-          </motion.button>
+          <div className="mt-10 flex gap-4">
+
+  <motion.button
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ delay: 1 }}
+    className="rounded-2xl border border-cyan-400/40 bg-cyan-400/10 px-8 py-4 text-lg font-semibold text-cyan-100 shadow-[0_0_40px_rgba(34,211,238,0.25)] backdrop-blur-md transition-all duration-300 hover:scale-105 hover:bg-cyan-400/20 hover:shadow-[0_0_60px_rgba(34,211,238,0.5)]"
+  >
+    Enter The Rift
+  </motion.button>
+
+  <a
+    href="/compare"
+    className="rounded-2xl border border-purple-400/40 bg-purple-400/10 px-8 py-4 text-lg font-semibold text-purple-100 shadow-[0_0_40px_rgba(168,85,247,0.25)] backdrop-blur-md transition-all duration-300 hover:scale-105 hover:bg-purple-400/20 hover:shadow-[0_0_60px_rgba(168,85,247,0.5)]"
+  >
+    Compare Players
+  </a>
+
+</div>
 
           {/* Stats */}
           <div className="mt-24 grid grid-cols-1 gap-6 md:grid-cols-3">
